@@ -32,11 +32,11 @@ void loop(){
     Channel2 = (pulseIn (channel2, HIGH));
     Serial.println (Channel1);
     Serial.println (Channel2);
-    if (channel1 > 1300 && channel1 < 1600 && channel2 > 1300 && channel2 < 1600 ){nothing();} 
-    if (channel1 < 1300 && channel2 < 1300) { reverse() ;}
-    if (channel1 > 1600 && channel2 > 1600) { forward() ;}  
-    if (channel1 < 1300 && channel2 > 1600) { left() ;}
-    if (channel1 > 1600 && channel2 < 1300) { right();}
+    if (Channel1 > 1300 && Channel1 < 1600 && Channel2 > 1300 && Channel2 < 1600 ){nothing();} 
+    if (Channel1 < 1300 && Channel2 < 1300) { reverse() ;}
+    if (Channel1 > 1600 && Channel2 > 1600) { forward() ;}  
+    if (Channel1 < 1300 && Channel2 > 1600) { left() ;}
+    if (Channel1 > 1600 && Channel2 < 1300) { right();}
 }}
 void nothing(){
     //motor_speed = 0;
